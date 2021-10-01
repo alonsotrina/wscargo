@@ -1,0 +1,29 @@
+// mixin mq movil
+@mixin phone {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+// mixin mq table 
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin xl {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+// mixin mq xl
+@mixin xxl {
+    @media screen and (min-width: 1920px) {
+        @content;
+    }
+}
+
+@mixin justify-content($a,$b:center) {
+    display: flex;
+    justify-content:$a;
+    align-items:$b;
+}

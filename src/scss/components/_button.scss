@@ -1,0 +1,51 @@
+
+.button {
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    text-transform: capitalize;
+    background: transparent;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    border: solid 2px red;
+    transition: .3s all ease;
+
+    i {
+        margin-right: 8px;
+    }
+
+    &:hover {
+        background: red;
+        color: #fff;
+        border: solid 2px red;
+    }
+    svg {
+        margin-right: 3px;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.button-outline-dark {
+    border: solid 2px color(colorTeen);
+    color: color(colorTeen);
+
+    &:hover {
+        background: color(colorTeen);
+        border: solid 2px color(colorTeen);
+    }
+}
+
+.button-primary {
+    border: solid 2px #2DACF3;
+    background: #2DACF3;
+    color: #fff;
+
+    &:hover {
+        background: #279add;
+        border: solid 2px #279add;
+    }
+}

@@ -1,0 +1,31 @@
+// funcion para establecer una rurta d ela imagenes
+@function img($image){
+    @return url($path + $image);
+}
+
+
+// funcion para convertir PX en EM
+@function em($px, $base: 16px){
+    @if type-of($px) == number and unit($px) == 'px'{     // condicion para verificar el tipo de dato
+        @return $px / $base * 1em;
+    }
+    @return null;
+}
+
+
+
+// funcion para map-get de $colors
+@function color($color-key){
+    @if map-has-key($color, $color-key) {  // condicional para ve rsi esxiste el KEY del map-get
+        @return map-get($color,$color-key);
+    }
+    @return null;
+}
+
+
+// body {
+//     font-size: em(30px);
+//     background: img('nombre-imagen.jpg');
+//     color: color(valor)
+
+// }

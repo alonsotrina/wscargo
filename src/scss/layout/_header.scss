@@ -1,0 +1,46 @@
+.header {
+    height: 370px;
+    background: linear-gradient(90deg, #E52D27 0%, #FC565C 100%);
+    clip-path: ellipse(70% 90% at 50% 10%);
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    @include justify-content(center,center);
+
+    // media query mobile
+    @include phone  {
+        clip-path: ellipse(150% 90% at 30% 10%);
+    }
+
+    .titulo {
+        @include justify-content(space-between);
+    }
+
+    h1 {
+        margin-bottom: 12px;
+    }
+}
+
+.text-m {
+    display: none;
+
+    h4 {
+        margin: 8px 0;
+    }
+
+    // media query mobile
+    @include phone {
+        display: block;
+        margin-bottom: 28px;
+    }
+}
+
+
+.bajada {
+    @include justify-content(space-between,center);
+
+    .bajada__left {
+        display: flex;
+        flex-wrap:wrap;
+    }
+}

@@ -1,0 +1,53 @@
+/*progressbar*/
+#progressbar {
+    margin: 56px 0;
+    overflow: hidden;
+
+    @include phone {
+        display: none;
+    }
+}
+
+#progressbar li {
+    color: #dbdbdb;
+    width: 20%;
+    float: left;
+    position: relative;
+}
+
+#progressbar li:before {
+    content: "";
+    width: 48px;
+    height: 48px;
+    display: block;
+    background: #fff;
+    border-radius: 100%;
+    margin: 0 auto 12px auto;
+    border: 10px solid #dbdbdb;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background: #dbdbdb;
+    position: absolute;
+    left: -50%;
+    top: 20px;
+    z-index: -1;
+}
+
+#progressbar li:first-child:after {
+    content: none;
+}
+
+#progressbar li.active:before {
+    border: 10px solid color(colorOne);
+}
+#progressbar li.active {
+    color: color(colorTeen);
+}
+#progressbar li.active:after {
+    background: color(colorOne);
+}

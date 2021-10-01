@@ -1,0 +1,17 @@
+// estrutura proyecto SASS
+
+@import "utilities/_utilities-dir";
+@import "base/_base-dir";
+@import "components/_components-dir";
+@import "layout/_layout-dir";
+@import "pages/_page-dir";
+@import "themes/_themes";
+//@import "vendors/_vendors-dir";
+
+
+.mobile_none {
+    // media query mobile
+    @include phone {
+        display: none;
+    }
+}

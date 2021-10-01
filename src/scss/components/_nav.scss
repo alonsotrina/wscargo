@@ -1,0 +1,129 @@
+nav {
+    color: #fff;
+    background-color: transparent;
+    width: 100%;
+    padding: 0 50px;
+    height: 80px;
+    box-shadow: none;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    @include justify-content(space-between,center);
+
+    // --> media query <-- //
+    @include phone {
+        padding: 0 16px;
+    }
+
+    .nav_logo {
+        display: flex;
+        align-items: center;
+        height: 64px;
+    }
+    
+    a {
+        display: flex !important; 
+        align-items: center;
+        font-size: 14px !important;
+        font-weight: 600;
+
+        .icons {
+            margin-right: 8px;
+        }
+    }
+
+    .material-icons {
+        margin-right: 0;
+        font-size: 20px;
+    }
+
+    .dropdown-content {
+        min-width: 127px;
+    }
+}
+
+.nav_icon {
+
+    i {
+        font-size: 35px !important;
+    }
+}
+
+.nav_right {
+    display: flex;
+
+    .link--none {
+        // --> media query <-- //
+        @include phone {
+            display: none !important;
+        }
+    }
+}
+
+.nav_right-link {
+    padding: 0 14px;
+    transition: .3s all ease;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.089);
+    }
+}
+
+.dropdown-trigger {
+    // --> media query <-- //
+    @include phone {
+        span {
+            display: none;
+        }
+    }
+}
+
+.icons-user {
+    margin-left: 8px;
+    width: 28px;
+    height: 28px;
+
+    // --> media query <-- //
+    @include phone {
+        width: 42px;
+        height: 42px;
+    }
+} 
+
+
+
+ // -->  stytle sidenav <--//
+.sidenav {
+    width: 250px;
+
+    .subheader {
+        font-size: 12px;
+    }
+}
+
+.user-view {
+    background: color(colorTwo);
+    padding: 30px 0;
+    height: 150px;
+
+    img {
+        width: 50%;
+    }
+}
+
+.sidenav .user-view {
+    position: relative;
+    padding: 0;
+    margin-bottom: 8px;
+    @include justify-content(center,center);
+}
+
+.sidenav li>a {
+    color: color(colorTenn);
+    text-transform: capitalize;
+}
+
+.activeo {
+    background: rgba(0, 0, 0, 0.034);
+    color: #a0a0a0 !important;
+}

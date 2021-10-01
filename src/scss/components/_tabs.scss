@@ -1,0 +1,20 @@
+.tabs {
+    margin-bottom: 8px;
+    height: 48px;
+    padding: 0 80px !important;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: color(colorOne);
+}
+
+.tabs .tab a {
+    color: color(colorGray);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.tabs .indicator {
+    background-color: color(colorOne);
+}
