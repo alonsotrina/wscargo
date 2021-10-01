@@ -3,7 +3,7 @@ import Header from "../components/layout/Header";
 import Tabs from "../components/layout/Tabs";
 import Seguimiento from "../components/moduls/seguimiento-servicio/Seguimiento";
 import Collapse from '../components/layout/Collapse';
-import { DatosCardServicios } from '../component s/layout/DatosCardServicios'
+import { DatosCardServicios } from '../components/layout/DatosCardServicios'
 import { Datos } from '../components/layout/Datos';
 import M from "materialize-css";
 
