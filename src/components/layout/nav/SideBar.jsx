@@ -1,8 +1,6 @@
 import React from 'react'
 import M from "materialize-css/dist/js/materialize.min.js";
-import IconsNav from '../../assets/img/IconsNav'
-
-// import Nav from "./Nav";
+import IconsNav from '../../../assets/img/IconsNav'
 import { Link } from 'react-router-dom'
 import { SibeBarData } from './SideBarData'
 import SubMenu from './SubMenu'

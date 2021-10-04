@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Header from "../../components/layout/Header";
-import Tabs from "../../components/layout/Tabs";
+// import Tabs from "../../components/layout/Tabs";
+import Tabs from "../../components/layout/tabs/Tabs";
 import Collapse from '../../components/layout/Collapse';
 import Maps from './map/Maps';
 import List from './list/List';

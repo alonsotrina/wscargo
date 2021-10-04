@@ -4,20 +4,11 @@ export const SibeBarData = [
         path: '/home'
     },
     {
-        title: 'seguimiento',
-        path: '/seguimiento_servicio'
-    },
-    {
-        title: 'perfil',
-        path: '/perfil_cliente'
-    }
-    ,
-    {
-        title: 'Segumiento 1',
+        title: 'Segumiento',
         path: '/seguimiento'
     },
     {
-        title: 'Perfil 1',
+        title: 'Perfil',
         path: '/perfil'
     }
 ]

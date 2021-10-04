@@ -3,7 +3,7 @@ import { DatosCardServicios } from './DatosCardServicios'
 import { Datos } from './Datos';
 import ProgressBar from './progressBar/ProgressBar';
 import Header from '../../components/layout/Header';
-import Tabs from "../../components/layout/Tabs";
+import Tabs from "../../components/layout/tabs/Tabs";
 import Collapse from '../../components/layout/Collapse';
 import M from "materialize-css";
 
