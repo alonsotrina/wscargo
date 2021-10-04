@@ -16,6 +16,13 @@ import Perfil_cliente from './pages/Perfil_cliente'
 import Seguimiento_servicio from './pages/Segumineto_servicio'
 
 
+/*************/
+import Seguimiento from './pages/seguimiento/Seguimiento'
+import Perfil from "./pages/perfil/Perfil";
+
+
+
+
 function App() {
   return (
     <Router>
@@ -29,11 +36,11 @@ function App() {
           <Route path="/home" exact>
               <Home/>
           </Route>
-          <Route path="/perfil_cliente" exact>
-            <Perfil_cliente/>
+          <Route path="/seguimiento" exact>
+            <Seguimiento />
           </Route>
-          <Route path="/seguimiento_servicio" exact>
-            <Seguimiento_servicio />
+          <Route path="/perfil" exact>
+            <Perfil />
           </Route>
       </Switch>
     </Router>
