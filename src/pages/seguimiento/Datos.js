@@ -90,3 +90,22 @@ export const Datos = [
         ]
     }
 ]
+
+/* recuerda poner la propiedad obj en el array
+Datos.map(function(item,index){
+    return(
+        <li>
+            {item.content.map(function(element,index2){
+                return(
+                    element.obj.map(function(item3,index3){
+                            return(
+                                <p>{item3.title} / {item3.descripcion}</p>
+                            )
+                    })
+                    
+                )
+
+            })}
+        </li>
+    )
+})*/
